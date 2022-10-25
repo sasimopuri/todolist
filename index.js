@@ -1,7 +1,8 @@
 let input=document.querySelector("#inputfeild");
 let display=document.querySelector(".display");
 
-document.querySelector("#add").onclick=()=>{
+function logic()
+{
     if(input.value.length==0)
     {
         alert("Enter task")
@@ -24,3 +25,13 @@ document.querySelector("#add").onclick=()=>{
     }
 }
 
+document.querySelector("#add").onclick=()=>{
+    logic();
+}
+input.addEventListener('keydown',(key)=>
+{
+    if(key.key=="Enter")
+    {
+        logic();
+    }
+})

@@ -1,0 +1,31 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    height: 100vh;
+    background-color: #FFF9CA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container{
+    width: 40%;
+    min-width: 350px;
+    background-color: #FFDEB4;
+    display: flex;
+    max-height: 100%;
+    flex-direction: column;
+    
+    align-items: center;
+    padding: 30px;
+    min-height: 350px;
+    row-gap: 50px;
+    
+}
+
+#inputfeild{
+    width: 300px;
+}

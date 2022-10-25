@@ -8,10 +8,10 @@ function logic()
         alert("Enter task")
     }
     else{
-        display.innerHTML+=`<div class="display">
-        <div dcontainer><span id="work">${input.value}</span>
+        display.innerHTML+=`<div class="task">
+        <span class="work">${input.value}</span>
         <button class="material-symbols-outlined">delete</button>
-        </div></div>` 
+        </div>` 
         let alltasks=document.querySelectorAll(".material-symbols-outlined");
         for(let i=0;i<alltasks.length;i++)
         {

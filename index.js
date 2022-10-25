@@ -1,5 +1,5 @@
-input=document.querySelector("#inputfeild");
-display=document.querySelector(".display");
+let input=document.querySelector("#inputfeild");
+let display=document.querySelector(".display");
 
 document.querySelector("#add").onclick=()=>{
     if(input.value.length==0)
@@ -8,9 +8,9 @@ document.querySelector("#add").onclick=()=>{
     }
     else{
         display.innerHTML+=`<div class="display">
-        <span id="work">${input.value}</span>
+        <div dcontainer><span id="work">${input.value}</span>
         <button class="material-symbols-outlined">delete</button>
-        </div>` 
+        </div></div>` 
         let alltasks=document.querySelectorAll(".material-symbols-outlined");
         for(let i=0;i<alltasks.length;i++)
         {
@@ -23,3 +23,4 @@ document.querySelector("#add").onclick=()=>{
 
     }
 }
+

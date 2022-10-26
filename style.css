@@ -24,6 +24,7 @@ body{
     padding: 20px;
     border-radius: 10px;
     box-shadow: 1px 1px 3px 1px #EEF1FF;
+    
 }
 
 .containertask{
@@ -90,4 +91,24 @@ body{
     align-items: center;
     flex-wrap: wrap;
 
+}
+
+.material-symbols-outlined:hover{
+    cursor: pointer;
+}
+.material-symbols-outlined{
+    background-color: #B1B2FF;
+    border: none;
+}
+
+
+@media screen and (min-width:320px) and (max-width:450px) {
+    .container{ 
+        min-width: 300px;
+        margin-right: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
 }
